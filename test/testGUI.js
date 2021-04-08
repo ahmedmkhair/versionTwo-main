@@ -4,7 +4,7 @@ async function test() {
     let browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
     let page = await browser.newPage()
 
-    await page.goto("http://localhost:4000")
+    await page.goto("http://localhost:3001")
     await page.setViewport({
         width: 0,
         height: 0
