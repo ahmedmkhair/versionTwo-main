@@ -4,7 +4,7 @@ let queries = queryString.split("-");
 console.log(queries)
 let [, sender, receiver] = queries
 let cid = ''
-dataBag = {
+let dataBag = {
     sender,
     receiver
 }
@@ -23,7 +23,6 @@ const getData = () => {
             return response.json()
         })
         .then(data => {
-            accessToken = data
             let listContents = ''
             console.log(typeof data)
             cid = data.cid
