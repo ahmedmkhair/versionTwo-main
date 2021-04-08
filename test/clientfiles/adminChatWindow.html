@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Window</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, rgb(116, 143, 212), rgb(171, 73, 204), blue, darkblue);
+        }
+        #messagesWindow {
+            background-color: #2a2a2a;
+            width: 90%;
+            height: 80vh;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: flex-end; */
+            overflow-y: scroll;
+            padding: 30px;
+            margin: auto;
+        }
+
+        #sendDiv {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        #sendInput {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10;
+            border: 5px solid yellow;
+        }
+
+        #sendInput:focus {
+            border: 5px solid green;
+            outline: unset;
+        }
+
+        #sen,
+        #rec {
+            margin: 2px 0px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        #sen {
+            background-color: rgb(0, 225, 255);
+            text-align: right;
+        }
+
+        #rec {
+            background-color: rgb(238, 195, 241);
+        }
+
+        button:nth-child(1){
+            background-color: red;
+            color: white;
+            padding: 10;
+         
+            border:1px solid red;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="window.location.href = './usersList.html'" name="back">&larr; back</button>
+    <div id="messagesWindow"></div>
+    <script src="js/chatWindow.js"></script>
+</body>
+
+</html>

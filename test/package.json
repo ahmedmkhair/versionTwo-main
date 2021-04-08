@@ -1,0 +1,41 @@
+{
+  "name": "mysqlnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "check.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "lint": "eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1",
+    "jest": "^26.6.3",
+    "jest-html-reporter": "^3.3.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "puppeteer": "^8.0.0"
+  }
+}

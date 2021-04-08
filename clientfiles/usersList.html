@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Friends</title>
+    <style>
+        body {
+            background-color: #2a2a2a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            width: 50%;
+            padding: 5px 3px;
+            border-radius: 3px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 2px;
+        }
+
+        a {
+            display: block;
+            width: 500px;
+            padding: 5px 3px;
+            border-radius: 3px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id='logout-button' onclick="doLogout()" name="logout">Logout</button>
+    <h2>Friend List</h2>
+    <ul id='user-list' name='user-list'></ul></ul>
+
+    <script src="js/serverConnector.js"></script>
+    <script src="js/getLists.js"></script>
+</body>
+
+</html>

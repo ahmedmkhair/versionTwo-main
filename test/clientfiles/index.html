@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>
+        Login
+    </title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            transform: scale(1.5);
+        }
+
+        #container div {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        #container div input {
+            padding: 10px 3px;
+            border-radius: 3px;
+            border: 1px solid gray;
+        }
+
+        #container div button {
+            width: 100%;
+            padding: 5px 3px;
+            border-radius: 3px;
+            background-color: darkviolet;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <label for="username">Username</label><br>
+            <input id='username' value="" name="username">
+        </div>
+        <div>
+            <label for="password">password</label><br>
+            <input type="password" id='password' value="" name="password">
+        </div>
+        <div>
+            <button onclick="doLogin()" id='login-button' name="submit">Login</button>
+            <button onclick="doReset()" id='reset'>Reset</button>
+        </div>
+    </div>
+    <script src="js/serverConnector.js"></script>
+</body>
+
+</html>
