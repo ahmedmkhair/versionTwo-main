@@ -2,7 +2,7 @@ function doLogin() {
     let un = document.getElementById("username").value
     let pw = document.getElementById("password").value
 
- loginRequest = {
+    let loginRequest = {
         username: un,
         password: pw
     }
