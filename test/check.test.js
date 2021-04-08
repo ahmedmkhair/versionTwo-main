@@ -58,7 +58,7 @@ test('Test login successfuly', async () => {
     // login with user and password to get a token
     let res = await axios.post('http://localhost:3001/api/login', {
         username: 'testUserSen',
-        password: '123'
+        password: '1231'
     }
     ).catch(function (e) {
 
