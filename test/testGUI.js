@@ -19,7 +19,7 @@ async function test() {
 
 
     let password = await page.$('input[name=password]')
-    await password.type("123")
+    await password.type("1231")
 
     await page.waitForTimeout(2000)
 
