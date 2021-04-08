@@ -17,9 +17,9 @@ const connection = async () => new Promise(
     (resolve, reject) => {
         const connection = mysql.createConnection({
             host: 'localhost',
-            user: 'root',
-            password: '',
-            database: 'emrgingtrend'
+            user: 'ahmed',
+            password: '12class34',
+            database: 'etdb'
         });
         connection.connect(error => {
             if (error) {
